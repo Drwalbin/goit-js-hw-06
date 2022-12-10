@@ -19,13 +19,4 @@ const gallery = document.querySelector('.gallery');
 const imageList = images.map((image) =>
   `<li><img src = ${image.url} width = '600' alt = ${image.alt} </img ></li>`
 )
-
-
 gallery.insertAdjacentHTML("afterbegin", imageList);
-
-gallery.style.padding = "10px";
-gallery.style.gap = "10px";
-gallery.style.listStyle = "none";
-gallery.style.textAlign = 'center';
-
-body.style.background = "black";
